@@ -1,0 +1,32 @@
+@media (max-width: 1600px) {
+    .header-content__title {
+      top: 220px;
+    }
+    .header-content__title h1 {
+    }
+    .header-content__subtitle {
+      top: 436px;
+    }
+    .search-form {
+      top: 550px;
+    }
+    .notification-window {
+      top: 400px;
+      right: 90px;
+    }
+    .rating-seller-window {
+      top: 450px;
+      left: 70px;
+    }
+    .shadow-box {
+     height: 90px;
+  }
+  
+  @media (max-width: 1400px) {
+    .notification-window {
+      display: none;
+    }
+    .rating-seller-window {
+      display: none;
+    }
+  }

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="media.css" /> -->
+    <title>Interior</title>
+  </head>
+
+  <body>
+    <!-- SVG Sprite -->
+    <svg style="display: none"></svg>
+    <div class="page">
+      <header class="header">
+        <div class="header-content">
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link nav-menu__link_active">Home</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Shop</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">About Us</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Contact</a>
+              </li>
+            </ul>
+            <a href="#" class="nav-menu__basket">
+              <svg
+                class="nav-menu__basket-logo"
+                width="32"
+                height="37"
+                viewBox="0 0 32 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 8C8 3.58143 11.5786 0 16 0C20.4214 0 24 3.58143 24 8V11.4286H28.5714C30.4643 11.4286 32 12.9643 32 14.8571V29.7143C32 33.5 28.9286 36.5714 25.1429 36.5714H6.85714C3.07 36.5714 0 33.5 0 29.7143V14.8571C0 12.9643 1.535 11.4286 3.42857 11.4286H8V8ZM11.4286 11.4286H20.5714V8C20.5714 5.475 18.5214 3.42857 16 3.42857C13.4786 3.42857 11.4286 5.475 11.4286 8V11.4286ZM9.71429 18.2857C10.6643 18.2857 11.4286 17.5214 11.4286 16.5714C11.4286 15.6214 10.6643 14.8571 9.71429 14.8571C8.76429 14.8571 8 15.6214 8 16.5714C8 17.5214 8.76429 18.2857 9.71429 18.2857ZM22.2857 14.8571C21.3357 14.8571 20.5714 15.6214 20.5714 16.5714C20.5714 17.5214 21.3357 18.2857 22.2857 18.2857C23.2357 18.2857 24 17.5214 24 16.5714C24 15.6214 23.2357 14.8571 22.2857 14.8571Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="nav-menu__basket-count">1</span>
+            </a>
+          </nav>
+          <div class="header-content__box">
+            <div class="header-content__title">
+              <h1>Bring Serenity to Your Place With Interior</h1>
+            </div>
+            <div class="header-content__subtitle">
+              <p>find your dream plant for you home decoration with us, and we will make it happen.</p>
+            </div>
+            <form class="search-form" action="" method="get">
+              <input class="search-form__input" type="text" placeholder="Search plant" />
+              <div class="search-form__button_hover">
+                <button class="search-form__button" type="submit">
+                  <svg
+                    class="search-form__ico"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.7953 23.9181L19.0584 19.1813L23.7953 23.9181ZM19.0584 19.1813C19.8187 18.421 20.4218 17.5184 20.8333 16.525C21.2447 15.5317 21.4565 14.467 21.4565 13.3918C21.4565 12.3166 21.2447 11.2519 20.8333 10.2586C20.4218 9.26521 19.8187 8.36262 19.0584 7.60234C18.2982 6.84205 17.3956 6.23896 16.4022 5.8275C15.4089 5.41604 14.3442 5.20426 13.269 5.20426C12.1938 5.20426 11.1291 5.41604 10.1357 5.8275C9.14237 6.23896 8.23978 6.84205 7.4795 7.60234C5.94404 9.1378 5.08142 11.2203 5.08142 13.3918C5.08142 15.5633 5.94404 17.6458 7.4795 19.1813C9.01496 20.7167 11.0975 21.5794 13.269 21.5794C15.4404 21.5794 17.523 20.7167 19.0584 19.1813V19.1813Z"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="shadow-box"></div>
+        <div class="notification-window hide">
+          <div class="notification-window__ico">
+            <svg width="205" height="116" viewBox="0 0 205 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_b_3_4858)">
+                <mask id="path-1-inside-1_3_4858" fill="white">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24 0C10.7452 0 0 10.7452 0 24V79C0 92.2548 10.7452 103 24 103H89.712C89.7326 103.037 89.7539 103.073 89.7758 103.109L96.2461 113.813C97.839 116.448 101.687 116.371 103.173 113.674L109.053 103H181C194.255 103 205 92.2548 205 79V24C205 10.7452 194.255 0 181 0H24Z"
+                  />
+                </mask>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 0C10.7452 0 0 10.7452 0 24V79C0 92.2548 10.7452 103 24 103H89.712C89.7326 103.037 89.7539 103.073 89.7758 103.109L96.2461 113.813C97.839 116.448 101.687 116.371 103.173 113.674L109.053 103H181C194.255 103 205 92.2548 205 79V24C205 10.7452 194.255 0 181 0H24Z"
+                  fill="#FFFDFD"
+                  fill-opacity="0.2"
+                />
+                <path
+                  d="M89.712 103L90.5829 102.508L90.2959 102H89.712V103ZM89.7758 103.109L90.6316 102.592L90.6316 102.592L89.7758 103.109ZM96.2461 113.813L97.1019 113.296L96.2461 113.813ZM103.173 113.674L102.297 113.191L103.173 113.674ZM109.053 103V102H108.462L108.177 102.518L109.053 103ZM1 24C1 11.2975 11.2975 1 24 1V-1C10.1929 -1 -1 10.1929 -1 24H1ZM1 79V24H-1V79H1ZM24 102C11.2975 102 1 91.7026 1 79H-1C-1 92.8071 10.1929 104 24 104V102ZM89.712 102H24V104H89.712V102ZM90.6316 102.592C90.6149 102.564 90.5986 102.536 90.5829 102.508L88.8411 103.492C88.8667 103.537 88.893 103.582 88.9201 103.627L90.6316 102.592ZM97.1019 113.296L90.6316 102.592L88.92 103.627L95.3903 114.331L97.1019 113.296ZM102.297 113.191C101.183 115.214 98.2966 115.272 97.1019 113.296L95.3903 114.331C97.3815 117.625 102.192 117.528 104.049 114.156L102.297 113.191ZM108.177 102.518L102.297 113.191L104.049 114.156L109.929 103.482L108.177 102.518ZM181 102H109.053V104H181V102ZM204 79C204 91.7026 193.703 102 181 102V104C194.807 104 206 92.8071 206 79H204ZM204 24V79H206V24H204ZM181 1C193.703 1 204 11.2975 204 24H206C206 10.1929 194.807 -1 181 -1V1ZM24 1H181V-1H24V1Z"
+                  fill="white"
+                  mask="url(#path-1-inside-1_3_4858)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_3_4858"
+                  x="-4"
+                  y="-4"
+                  width="213"
+                  height="123.744"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3_4858" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3_4858" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+            <div class="notification-window__text">
+              <p>$65.00</p>
+              <p>Dracena Fragnas</p>
+            </div>
+            <buttton class="notification-window__btn" type="button"></buttton>
+          </div>
+        </div>
+
+        <!--                            ▄███▄███▄
+                                        █████████
+                                         ▀█████▀
+                                           ▀█▀
+  
+                                ░░░░░▄░░░░░░░░░░░░░░▄░░░░░░
+                                ░░░░░██░░░░░░░░░░░░██░░░░░░
+                                ░░░░░███░░░░░░░░░░███░░░░░░
+                                ░░░░░████░░░░░░░░████░░░░░░
+                                ░░░░░█████░░███░░████░░░░░░
+                                ░░░░░██████░███░██████░░░░░
+                                ░░░░░█████████████████░░░░░
+                                ▄░░▀███████████████████▀░░▄
+                                ░▀███████████████████████▀░
+                                ░▄▄████▀░▀▀█████▀▀░▀████▄▄░
+                                ░░▀▀█████▄░░███░░▄█████▀▀░░
+                                ░░░░░░▀████░███░▄███▀░░░░░░ 
+                                ░░░░░░░░███████████░░░░░░░░
+                                ░░░░░░░░░█████████░░░░░░░░░
+                                ░░░░░░░░░░███████░░░░░░░░░░
+                                ░░░░░░░░░░███████░░░░░░░░░░
+                                ░░░░░░░░░░▀█████▀░░░░░░░░░░
+                                ░░░░░░░░░░░█████░░░░░░░░░░░
+                                ░░░░░░░░░░░░▀█▀░░░░░░░░░░░░
+                              -->
+
+        <div class="rating-seller-window hide">
+          <div class="rating-seller-window__img">
+            <img src="./img/face.png" alt="face" />
+          </div>
+          <div class="rating-seller-window__about">
+            <p>Milan Jack</p>
+            <div class="rating-seller-window__prof">
+              <p>home seller, USA</p>
+              <div class="rating-numb">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.7944 7.0335L9 1.125L7.20563 7.0335H1.125L6.04463 10.8585L4.21875 16.875L9 13.1569L13.7812 16.875L11.9554 10.8585L16.875 7.0335H10.7944Z"
+                    fill="#DCB47A"
+                  />
+                </svg>
+                <p><span>4.9</span>rating</p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro beatae error laborum.</p>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <article>
+          <div class="about-us">
+            <div class="about-us__item">
+              <img class="about-us__ico" src="./img/box-ico.svg" alt="box-ico" />
+              <div class="about-us__text">
+                <h3>Free Shapping</h3>
+                <p>No charge for each delivery</p>
+              </div>
+            </div>
+            <div class="about-us__item">
+              <img class="about-us__ico" src="./img/wallet-ico.svg" alt="box-ico" />
+              <div class="about-us__text">
+                <h3>Quick Payment</h3>
+                <p>100% secure payment</p>
+              </div>
+            </div>
+            <div class="about-us__item">
+              <img class="about-us__ico" src="./img/face-ico.svg" alt="box-ico" />
+              <div class="about-us__text">
+                <h3>24/7 Support</h3>
+                <p>Quick support</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section class="product">
+          <div class="product-wrapper">
+            <div class="product-wrapper__title">
+              <h2>Best Seller Product</h2>
+              <a href="#colection">See all colection</a>
+            </div>
+            <div class="product-card">
+              <div class="product-card__item product-card__item_not_hover">
+                <div class="product-card__photo">
+                  <img src="./img/product3.jpg" alt="product1" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <p>Modern Picture</p>
+                    <button class="product-card__btn" type="button">
+                      <img src="./img/shopping-cart-ico.svg" alt="shopping" />
+                    </button>
+                  </div>
+                  <div class="product-card__price">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="product-card__label">
+                    <p>label</p>
+                    <p>label</p>
+                    <p>label</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__item">
+                <div class="product-card__photo">
+                  <img src="./img/product1.jpg" alt="product1" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <p>Modern Picture</p>
+                    <button class="product-card__btn" type="button">
+                      <img src="./img/shopping-cart-ico.svg" alt="shopping" />
+                    </button>
+                  </div>
+                  <div class="product-card__price">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="product-card__label">
+                    <p>label</p>
+                    <p>label</p>
+                    <p>label</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__item">
+                <div class="product-card__photo">
+                  <img src="./img/product2.jpg" alt="product1" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <p>Modern Picture</p>
+                    <button class="product-card__btn" type="button">
+                      <img src="./img/shopping-cart-ico.svg" alt="shopping" />
+                    </button>
+                  </div>
+                  <div class="product-card__price">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="product-card__label">
+                    <p>label</p>
+                    <p>label</p>
+                    <p>label</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__item">
+                <div class="product-card__photo">
+                  <img src="./img/product3.jpg" alt="product1" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <p>Modern Picture</p>
+                    <button class="product-card__btn" type="button">
+                      <img src="./img/shopping-cart-ico.svg" alt="shopping" />
+                    </button>
+                  </div>
+                  <div class="product-card__price">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="product-card__label">
+                    <p>label</p>
+                    <p>label</p>
+                    <p>label</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__item product-card__item_not_hover">
+                <div class="product-card__photo">
+                  <img src="./img/product1.jpg" alt="product1" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <p>Modern Picture</p>
+                    <button class="product-card__btn" type="button">
+                      <img src="./img/shopping-cart-ico.svg" alt="shopping" />
+                    </button>
+                  </div>
+                  <div class="product-card__price">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="product-card__label">
+                    <p>label</p>
+                    <p>label</p>
+                    <p>label</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="interior">
+          <div class="interior-wrapper">
+            <div class="interior-wrapper__title">
+              <h2>Interior Plant Reference</h2>
+              <p>make your home so comfortable with refreshing plants</p>
+            </div>
+            <div class="showcase-grid showcase-grid_row_1">
+              <div class="showcase-grid__item showcase-grid__item_big_img">
+                <div class="showcase-grid__item-tag">bedroom</div>
+                <img src="./img/showcase1.jpg" alt="" />
+              </div>
+              <div class="showcase-grid__item showcase-grid__item_small_img">
+                <div class="showcase-grid__item-tag">dining room</div>
+                <img src="./img/showcase2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="showcase-grid showcase-grid_row_2">
+              <div class="showcase-grid__item showcase-grid__item_small_img">
+                <div class="showcase-grid__item-tag">staircase</div>
+                <img src="./img/showcase3.jpg" alt="" />
+              </div>
+              <div class="showcase-grid__item showcase-grid__item_big_img">
+                <div class="showcase-grid__item-tag">living room</div>
+                <img src="./img/showcase4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <article>
+          <div class="site-visit">
+            <h2>Ready for a <span>Site visit ?</span></h2>
+            <p>Lorem ipsum dolo elit Lorem ipsum dolo</p>
+            <a class="site-visit__link" href="#">view now</a>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-wrapper-flex-row">
+            <form class="subscribe-form">
+              <div class="subscribe-form__box">
+                <input class="subscribe-form__input" type="email" placeholder="Enter your email" />
+                <button class="subscribe-form__btn" type="submit">Subscribe</button>
+              </div>
+            </form>
+            <div class="footer-liks">
+              <div class="footer-liks__column">
+                <h3>Support</h3>
+                <a class="" href="#">About Us</a>
+                <a class="" href="#">Careers</a>
+                <a class="" href="#">Blog</a>
+              </div>
+              <div class="footer-liks__column">
+                <h3>Useful Link</h3>
+                <a class="" href="#">Payment & Tax</a>
+                <a class="" href="#">Team of service</a>
+                <a class="" href="#">Privaci Policy</a>
+              </div>
+              <div class="footer-liks__column">
+                <h3>Our Menu</h3>
+                <a class="" href="#">Best Product</a>
+                <a class="" href="#">Best Product</a>
+              </div>
+              <div class="footer-liks__column footer-liks__column-address">
+                <h3>Address</h3>
+                <a class="" href="#">JL. Setiabudhi No. 193 Sukasari, Bandung West Java, Indonesia</a>
+                <a class="" href="mailto:hallo@daunku.com" type="email">hallo@daunku.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-wrapper__border"></div>
+          <p class="footer-wrapper__copyright">© 2023 davixq - All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
